@@ -3,12 +3,23 @@
 
 {% block content %}
   
-<div class="container">
+<div class="container" style="margin-top: 55px;">
   <div class="row">
     <div class="col-sm-4">
       <h2 style="color: red;">{{d}}</h2>
       <a href="{% url 'viewdoc' %}"><h4 style="color:blue;">Doctor</h4></a>
     </div>
+
+    <div class="col-sm-4">
+      <h2 style="color: red;">{{d}}</h2>
+      <a href="{% url 'viewper' %}"><h4 style="color:blue;">Patient</h4></a>
+    </div>
+
+    <div class="col-sm-4">
+      <h2 style="color: red;">{{d}}</h2>
+      <a href="{% url 'viewapin' %}"><h4 style="color:blue;">Appoiment</h4></a>
+    </div>
+
   </div>
 
 </div>
