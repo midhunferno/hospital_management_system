@@ -1,0 +1,35 @@
+{% include "base.html" %}
+{% include "navigation.html" %}
+{% block content %}
+
+error = "{{ error }}"
+{% if error == "no" %}
+    <script>
+        alert('Record saved successfully');
+        window.location.href = "{% url 'viewdoc' %}";
+    </script>
+{% endif %}
+
+{% if error == "yes" %}
+    <script>
+        alert('Invalid login, please try again');
+    </script>
+{% endif %}
+
+<div class="container" style="margin-top: 55px;">
+    <h2 class="text-center">Add Doctor</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="name">Doctor Name</label>
+        <input type="text" name="name" class="form-control">
+        <label for="mobile">Mobile</label>
+        <input type="number" name="mobile" class="form-control">
+        <label for="special">Special</label>
+        <input type="text" name="special" class="form-control">
+        <br>
+        <input type="submit" value="Submit" class="form-control btn btn-primary">
+    </form>
+</div>
+
+{% endblock content %}
+{% include "footer.html" %}

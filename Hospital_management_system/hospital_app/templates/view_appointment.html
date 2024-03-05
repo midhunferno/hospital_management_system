@@ -1,0 +1,36 @@
+{% include "base.html" %}
+{% include "navigation.html" %}
+
+{% block content %}
+{% load static %}
+<div class="mb-5 p-5 pt-0" style="margin-top: 54px;">
+    <h2 class="text-center text-info"> View Appointment</h2>
+
+    <table id="example" class="table mx-auto table-hover mb-5 p-5 pt-0">
+        <thead>
+            <tr>
+                <th>Appointment Id</th>
+                <th>Doctor Name</th>
+                <th>Patient Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in doc %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.doctor}}</td>
+                <td>{{i.patient}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.time}}</td>
+                <td><a href="{% url 'deleteapin' i.id %}" onclick="return confirm('are you sure to delete')"
+                        class="btn btn-danger">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
+{% include "footer.html" %}

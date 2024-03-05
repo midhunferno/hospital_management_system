@@ -1,0 +1,38 @@
+{% include "base.html" %}
+{% include "navigation.html" %}
+<style>
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+        transform: translateY(-20px);
+    }
+    a {
+    text-decoration: none;
+}
+</style>
+
+{% block content %}
+<div class="container" style="margin-top: 50px;">
+    <h1 class="text-center">Contact us</h1>
+<div class="row mt-5 text-center">
+    <div class="col-lg-3 col-sm-6 mydivstyle my-3"> 
+        <h4><i class=" fas fa-phone-square"> </i> Contact </h4>
+        <p class="text-danger mt-3" style="font-weight: bold;"><a href="tel:+91 9061257641">+91 9061257641</a></p>
+    </div>
+    <div class="col-lg-3 col-sm-6  mydivstyle my-3">
+        <h4><i class="fa-solid fa-envelope"></i> Send-email</h4>
+        <p class="mt-3" style="font-weight: bold;" ><a href="mail to:midhunferno819@gmail.com">midhunferno819@gmail.com</a></p>
+    </div>
+    <div class="col-lg-3 col-sm-6  mydivstyle my-3">
+        <h4><i class="fa fa-address-card" aria-hidden="true"></i> Office Address</h4>
+        <p class="mt-3" style="font-weight: bold;"><a href="http://maps.google.com/maps?q=Oorambu">Oorambu,tvm</a></p>
+    </div>
+    <div class="col-lg-3 col-sm-6  mydivstyle my-3">
+        <h4><i class="fa-sharp fa-solid fa-clock" aria-hidden="true"></i> Office Time</h4>
+        <p class="mt-3" style="font-weight: bold;">10AM to 5PM</p>
+    </div>
+    
+</div>
+</div>
+
+{% endblock %}
+{% include "footer.html" %}

@@ -1,0 +1,17 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% block content %}
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 style="color: red;">{{d}}</h2>
+      <a href="{% url 'viewdoc' %}"><h4 style="color:blue;">Doctor</h4></a>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% include "footer.html" %}
