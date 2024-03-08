@@ -22,4 +22,6 @@ class appoiment(models.Model):
     doctor=models.ForeignKey(doctor,on_delete=models.CASCADE)
     patient=models.ForeignKey(patient,on_delete=models.CASCADE)
     date=models.DateField()
-    time=models.TimeField()      
+    time=models.TimeField()  
+    def __str__(self):
+        return self.doctor.name+"__"+self.patient.name    

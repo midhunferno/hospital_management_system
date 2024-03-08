@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +6,19 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="{% static 'css/hospital.css' %}">
 </head>
 
 <body>
   <div class="nav1">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
+        <img class="logo" src="{% static 'images/logo2.png' %}" alt="">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
 
             <li class="nav-item">
               <a class="nav-link" href="{% url 'home' %}">Home</a>
@@ -32,7 +33,6 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'login' %}">Login</a>
             </li>
-           
             {% endif %}
             {% if request.user.is_authenticated %}
             <li class="nav-item">

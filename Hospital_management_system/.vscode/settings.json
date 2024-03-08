@@ -1,0 +1,8 @@
+{
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[python]": {
+        "editor.defaultFormatter": null
+    }
+}

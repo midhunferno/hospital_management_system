@@ -17,7 +17,6 @@ def contact(request):
 def index(request):
     if not request.user.is_staff:
         return redirect('login')
-
     doctors_count = doctor.objects.count()
     patients_count = patient.objects.count()
     appointments_count = appoiment.objects.count()

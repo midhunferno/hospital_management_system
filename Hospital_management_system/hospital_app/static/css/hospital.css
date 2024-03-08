@@ -236,3 +236,9 @@ i.fa-solid.fa-circle-chevron-down.fa-beat.fa-sm {
   border: 2px solid red;
  
 }
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 68px;
+}
