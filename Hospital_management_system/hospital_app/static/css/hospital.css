@@ -242,3 +242,45 @@ i.fa-solid.fa-circle-chevron-down.fa-beat.fa-sm {
     height: 40px;
     border-radius: 68px;
 }
+.main9{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m2 {
+    color: white;
+    font-weight: bold;
+}
+.carousel {
+    position:inherit;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color:black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}

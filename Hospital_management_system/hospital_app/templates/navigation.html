@@ -21,32 +21,32 @@
           <ul class="navbar-nav ms-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'home' %}">Home</a>
+              <a class="m2  nav-link" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+              <a class="m2   nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
+              <a class="m2 nav-link" href="{% url 'about' %}">About</a>
             </li>
             {% if not request.user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'login' %}">Login</a>
+              <a class="m2 nav-link" href="{% url 'login' %}">Login</a>
             </li>
             {% endif %}
             {% if request.user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">Dashbord</a>
+              <a class="m2 nav-link" href="{% url 'index' %}">Dashbord</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
+              <a class="m2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctor</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'viewdoc' %}">View Doctor</a></li>
                 <li><a class="dropdown-item" href="{% url 'adddoc' %}">Add Doctor</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
+              <a class="m2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patient</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'viewper' %}">View Patient</a></li>
                 <li><a class="dropdown-item" href="{% url 'addper' %}">Add Patient</a></li>
@@ -54,7 +54,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Appointment</a>
+              <a class="m2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Appointment</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'viewapin' %}">View Appointment</a></li>
                 <li><a class="dropdown-item" href="{% url 'addapin' %}">Add Appointment</a></li>
@@ -62,7 +62,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+              <a class="m2 nav-link" href="{% url 'logout' %}">Logout</a>
             </li>
             {% endif %}
           </ul>

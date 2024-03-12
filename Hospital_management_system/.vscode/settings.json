@@ -4,5 +4,6 @@
     },
     "[python]": {
         "editor.defaultFormatter": null
-    }
+    },
+    "python.analysis.autoImportCompletions": true
 }
